@@ -1,0 +1,32 @@
+{
+	"name": "HTMLets",
+	"version": "2.0.1",
+	"author": [
+		"Daniel Kinzler",
+		"Valerio Pelliccioni (>= MW 1.43)"
+	],
+	"url": "https://mediawiki.org/wiki/Extension:HTMLets",
+	"descriptionmsg": "htmlets-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"HTMLets": [
+			"i18n"
+		]
+	},
+	"Config": {
+		"HTMLetsDirectory": {
+			"value": "",
+			"description": "Directory where HTMLet files are stored. Defaults to $IP/htmlets if empty."
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "HTMLets\\Hooks::onParserFirstCallInit",
+		"ParserAfterTidy": "HTMLets\\Hooks::onParserAfterTidy"
+	},
+	"AutoloadClasses": {
+		"HTMLets\\Hooks": "includes/Hooks.php",
+		"HTMLets\\TagHandler": "includes/TagHandler.php"
+	},
+	"manifest_version": 2
+}
