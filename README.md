@@ -4,7 +4,7 @@
 
 - **Status:** Maintained (modern extension.json version, compatible with MediaWiki 1.31+ and 1.43+)
 - **Type:** Tag extension (`<htmlet>`)
-- **Author:** Daniel Kinzler (original), modernized by the community
+- **Author:** Daniel Kinzler - https://www.mediawiki.org/wiki/User:Duesentrieb (original), modernized by Valerio Pelliccioni https://www.mediawiki.org/wiki/User:Silkwood
 - **License:** GPL-2.0-or-later
 - **Hooks used:** `ParserFirstCallInit`, `ParserAfterTidy`
 - **Configuration:** `$wgHTMLetsDirectory`
@@ -95,4 +95,4 @@ GPL-2.0-or-later
 ## Credits
 
 - Original author: Daniel Kinzler (Duesentrieb)
-- Modernization: Community contributors
+- Modernization: Valerio Pelliccioni
